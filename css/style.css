@@ -169,6 +169,7 @@ textarea.form-control {
 
 .navbar-toggle {
     margin: 0;
+    padding: 4px 10px;
 }
 
 .navbar-toggle .icon-bar {
@@ -431,6 +432,7 @@ textarea.form-control {
         width: 100%;
     }
 }
+
 /* ========= ABOUT US Section End ============ */
 
 /*========= SERVICES Section START =========*/
@@ -496,15 +498,24 @@ textarea.form-control {
 @media (max-width: 599px) {
     .service-tabs .nav-tabs > li {
         width: 33.3%;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 480px) {
     .nav-tabs li .tablist-title {
         font-size: 12px;
     }
+
+    .service-tabs .nav-tabs > li {
+        width: 50%;
+    }
+
+    .tab-content .tab-pane {
+        padding-top: 30px;
+    }
 }
+
 /*========= SERVICES Section END =========*/
 
 /*========= LETS TALK Section START =========*/
@@ -530,6 +541,7 @@ textarea.form-control {
 .lets-talk-img {
     margin-top: -32px;
 }
+
 /*========= LETS TALK Section END =========*/
 
 /* ========= PORTFOLIO Section START ============ */
@@ -581,6 +593,10 @@ textarea.form-control {
     padding-left: 7px;
 }
 
+.portfolio-tabs .tab-content .img-item img {
+    width: 100%;
+}
+
 @media (max-width: 767px) {
     .portfolio-tabs .nav-tabs {
         margin-bottom: 0;
@@ -609,7 +625,13 @@ textarea.form-control {
         font-size: 15px;
         letter-spacing: 0.3em;
     }
+
+    .portfolio-tabs .tab-content .img-item {
+        width: 100%;
+        float: none;
+    }
 }
+
 /* ========= PORTFOLIO Section END ============ */
 
 /* ========= LIKE-OUR-CREATIVE-WORKS Section START ============ */
@@ -627,6 +649,7 @@ textarea.form-control {
     background-color: #cfcfcf;
     font-variant: small-caps;
 }
+
 /* ========= LIKE-OUR-CREATIVE-WORKS Section END ============ */
 
 /* ========= WHY CHOOSE US Section START ============ */
@@ -666,6 +689,10 @@ textarea.form-control {
 @media (max-width: 767px) {
     .feature-item {
         margin-bottom: 15px;
+    }
+
+    .feature-description {
+        text-align: center;
     }
 }
 
@@ -780,7 +807,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     .carousel-indicators {
         bottom: -16%;
     }
@@ -809,6 +836,7 @@ textarea.form-control {
         font-size: 14px;
     }
 }
+
 /* ========= REVIEWS Section END ============ */
 
 /* ========= LATEST NEWS Section START ============ */
@@ -876,16 +904,16 @@ textarea.form-control {
 }
 
 @media (max-width: 991px) {
-    .latest-news .news-section .btn {
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 767px) {
     .latest-news .news-section {
         text-align: center;
     }
 
+    .latest-news .news-section .btn {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 767px) {
     .latest-news .news-section p {
         padding-bottom: 10px;
     }
@@ -904,8 +932,14 @@ textarea.form-control {
 
     .latest-news .news-note {
         margin: 40px 0;
+        float: left;
+    }
+
+    .news-section span.news-note {
+        float: none;
     }
 }
+
 /* ========= LATEST NEWS Section END ============ */
 
 /* ========= SUBSCRIBE Section START ============ */
@@ -950,6 +984,7 @@ textarea.form-control {
         letter-spacing: .1em;
     }
 }
+
 /* ========= SUBSCRIBE Section END ============ */
 
 /* ========= CONTACT Section START ============ */
@@ -959,16 +994,16 @@ textarea.form-control {
 }
 
 .contact-item-icon {
-    width: 29px;
-    height: 29px;
+    width: 22px;
+    height: 22px;
     background-color: #000;
     float: left;
     color: #fff;
     font-size: 14px;
     text-align: center;
-    line-height: 29px;
+    line-height: 22px;
     transform: rotate(45deg);
-    margin-right: 20px;
+    margin-right: 14px;
     border-radius: 3px;
 }
 
@@ -1039,6 +1074,7 @@ textarea.form-control {
         text-align: center;
     }
 }
+
 /* ========= CONTACT News Section END ============ */
 
 /* ========= MAP Section START ============ */
@@ -1108,6 +1144,7 @@ textarea.form-control {
     transform: translateY(100%);
     opacity: 0;
 }
+
 /* ========= MAP Section END ============ */
 
 /* MAIN STYLE END */
@@ -1117,6 +1154,11 @@ textarea.form-control {
     text-align: center;
     padding-bottom: 0;
     overflow: hidden;
+    position: relative;
+}
+
+.footer-logo {
+    margin-top: 140px;
 }
 
 .footer .social-nav {
@@ -1149,6 +1191,7 @@ textarea.form-control {
 
 .footer .footer-text {
     margin-top: 110px;
+    margin-bottom: 55px;
 }
 
 .footer-text span {
@@ -1171,11 +1214,13 @@ textarea.form-control {
     color: rgba(0, 0, 0, .2);
     display: block;
     font-size: 30px;
-    float: right;
-    margin: 15px 30px 30px 0;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
 }
 
 .footer .nav-up:hover {
     color: rgba(0, 0, 0, .5);
 }
+
 /* FOOTER STYLE END */

@@ -169,7 +169,8 @@ textarea.form-control {
 
 .navbar-toggle {
     margin: 0;
-    padding: 4px 10px;
+    padding: 0;
+    margin-top: 3px;
 }
 
 .navbar-toggle .icon-bar {
@@ -187,7 +188,7 @@ textarea.form-control {
 /* HEADER STYLE START */
 
 .header {
-    padding: 25px;
+    padding: 25px 0;
     position: fixed;
     top: 0;
     left: 0;
@@ -333,7 +334,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 479px) {
     .inner {
         padding-bottom: 175px;
     }
@@ -473,7 +474,6 @@ textarea.form-control {
     font-size: 14px;
     letter-spacing: .4em;
     text-transform: uppercase;
-    margin-top: 35px;
 }
 
 .service-tabs .nav-tabs li .icon {
@@ -502,7 +502,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 479px) {
     .nav-tabs li .tablist-title {
         font-size: 12px;
     }
@@ -564,7 +564,8 @@ textarea.form-control {
 
 .portfolio-tabs .nav-tabs {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: -20px;
+    padding-top: 35px;
 }
 
 .portfolio-tabs .nav-tabs > li {
@@ -583,14 +584,12 @@ textarea.form-control {
 
 .portfolio-tabs .picture-section {
     overflow: hidden;
-    margin: 0 4px 0 -3px;
 }
 
 .portfolio-tabs .tab-content .img-item {
     float: left;
     width: 33.333%;
-    padding-bottom: 7px;
-    padding-left: 7px;
+    padding: 3.5px;
 }
 
 .portfolio-tabs .tab-content .img-item img {
@@ -819,7 +818,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 479px) {
     .reviews .carousel-caption p {
         margin: 0 70px 20px 70px;
     }
@@ -886,6 +885,7 @@ textarea.form-control {
     font: 300 15px/1.73 "Open Sans", sans-serif;
     padding-top: 20px;
     padding-bottom: 25px;
+    text-align: left;
 }
 
 .latest-news .news-section .btn {
@@ -925,7 +925,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 479px) {
     .latest-news .title {
         margin-bottom: 0;
     }
@@ -979,7 +979,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 479px) {
     .title.text-light {
         letter-spacing: .1em;
     }
@@ -1065,7 +1065,7 @@ textarea.form-control {
     }
 }
 
-@media (max-width: 449px) {
+@media (max-width: 479px) {
     .contact-us .form-submit button[type="submit"] {
         margin-top: 15px;
     }
